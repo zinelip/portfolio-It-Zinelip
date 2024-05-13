@@ -5,19 +5,35 @@ body {
 }
 .main__title {
   font-family: "VT323", monospace;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 233px;
   line-height: 32px;
   color: #1db418;
   margin: 10%;
   text-align: center;
 }
-
+.main__title__AboutMe {
+  font-family: "VT323", monospace;
+  font-weight: 800;
+  font-size: 133px;
+  line-height: 32px;
+  color: #1db418;
+  margin: 10%;
+  text-align: center;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
+.main__card-img {
+  width: 60%;
+  margin: 0 auto; /* Esto centra la imagen horizontalmente */
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .menu {
   display: flex;
   justify-content: center;
@@ -29,6 +45,18 @@ body {
   font-weight: bold;
   font-family: "VT323", monospace;
   font-size: 40px;
+}
+.menu__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 2;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "VT323", monospace;
+  font-size: 80px;
 }
 
 a {
@@ -53,6 +81,8 @@ li {
 .arrow:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* para indicar que el texto es clickeable */
+  animation: titilar 1s infinite; /* animación de titilación */
 }
 
 .arrow:hover i {
@@ -60,4 +90,41 @@ li {
   position: absolute;
   top: 0.5em;
   left: -6em;
+}
+/* Animacion menu */
+.text {
+  font-size: 16px; /* ajusta el tamaño del texto según sea necesario */
+  margin-top: 10px; /* espacio entre la imagen y el texto */
+}
+
+@keyframes titilar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text:hover {
+  animation: subirbajar 0.5s ease-in-out alternate infinite; /* animación de subir y bajar */
+}
+
+@keyframes subirbajar {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.AboutMe {
+  width: 800px;
+
+  margin: 0 auto;
+  flex-flow: column;
 }
