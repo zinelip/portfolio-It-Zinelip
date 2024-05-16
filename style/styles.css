@@ -12,21 +12,20 @@ body {
 
 .main__title {
   font-family: "VT323", monospace;
+  font-family: "VT323", monospace;
   font-weight: 800;
-  font-size: 133px;
   line-height: 32px;
-  color: #1db418;
-  margin: 10%;
-  text-align: center;
+  color: white;
+  margin: 0% 1% 1% 1%;
 }
 .main__title__AboutMe {
   font-family: "VT323", monospace;
   font-weight: 800;
-  font-size: 133px;
   line-height: 32px;
   color: white;
-  margin: 2% 0%;
-  text-align: center; /* Esto centra el título "It zinelip" */
+  margin: 0 auto; /* Centra horizontalmente */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  font-size: 150px; /* Tamaño del texto */
 }
 
 .main__card-img {
@@ -48,6 +47,7 @@ body {
   font-weight: bold;
   font-family: "VT323", monospace;
   font-size: 40px;
+  margin: 4%;
 }
 .menu__select {
   display: flex;
@@ -120,7 +120,7 @@ li {
 }
 /* About me */
 .wrapper {
-  width: 800px;
+  width: 600px;
   display: flex;
   margin: 0 auto;
 }
@@ -141,7 +141,6 @@ li {
   flex-flow: column;
   gap: 24px;
 }
-
 .main__card {
   width: 100%;
   border-radius: 16px;
@@ -149,6 +148,16 @@ li {
   background: #333;
   color: #dedede;
   transition: 350ms;
+  margin-bottom: 1%;
+}
+.main__card_index {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 8px 8px 24px #333, -8px -8px 24px #666;
+  background: #333;
+  color: #dedede;
+  transition: 350ms;
+  margin-bottom: 1%;
 }
 
 .main__card-img {
